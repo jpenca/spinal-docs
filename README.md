@@ -22,6 +22,8 @@ test if your setup is good to go:
 ## Hello World
 the 'hello world' of step sequencer programming is probably a 4/4 kick drum.
 type the following into the spinal interpreter:
+```
     trig BD 1^16'4
+```
 
 bla.
