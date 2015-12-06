@@ -8,19 +8,19 @@ spinal is an environment for programming step sequencers - currently it works ex
 Spinal is being implemented as a Mac application which interprets the language and communicates with the drum machine.
 
 # Usage
-Let's get going
+Follow to tutorial below to get started.
 
 ## Setup
-you need a Rytm drum computer and a Mac running the spinal application:
+You need a Rytm drum computer and a Mac running the spinal application:
 - Connect the drum machine to your Mac via USB.
 - on the Rytm drum computer, make sure that USB-MIDI communication is enabled.
 - Disable Overbridge-Mode on the Rytm drum computer.
 
-test if your setup is good to go:
+Test if your setup is good to go:
 - Launch the app, and press CMD+1 on your computer keyboard. The active sequencer pattern of your drum machine appears in the grid display. Make changes to the sequence, and hit CMD+1 again. The changes you made should be reflected in the grid display.
 
 ## Hello World
-the 'hello world' of step sequencer programming is probably a 4/4 kick drum. Start with an empty pattern on the drum machine.
+The 'hello world' of step sequencer programming is probably a 4/4 kick drum. Start with an empty pattern on the drum machine.
 Then type the following into the spinal interpreter, then hit Return:
 ```
 trig bd 1^16'4
@@ -39,4 +39,7 @@ The interval `'4` is optional. For example, try: `1^16`. The interval then simpl
 
 Play around with this, and you will master the spinal language quickly.
 
-## events on a grid
+## Ranges & Loops
+The main design goal of spinal is to give you the ability to express yourself in terms of sequences that your drum machine can understand.
+The basic building block for that is spinal's range-loop expression which is a powerful tool for creating intricate sequences.
+**It is essential that you learn how to use the range-loop.**
