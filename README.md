@@ -41,5 +41,5 @@ Play around with this, and you will master the spinal language quickly.
 
 ## Ranges & Loops
 The main design goal of spinal is to give you the ability to express yourself in terms of sequences that your drum machine can understand.
-The basic building block for that is spinal's range-loop expression which is a powerful tool for creating intricate sequences.
-**It is essential that you learn how to use the range-loop.**
+The basic building block for that is the range-loop expression - a powerful tool for creating intricate sequences.
+**It is essential that you learn how to use the range-loop.** Once you know how it works, you have learned most of the spinal language already.
