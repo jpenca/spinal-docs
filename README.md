@@ -32,6 +32,10 @@ to get familiar with spinal, try to change the command a bit, for example change
 try different tracks, e.g. `trig sd 1^16'4` for the snare-drum track.
 also try different ranges, such as `2^8'4`.
 the interval `'4` is optional. For example, try: `1^16`. The interval is then simply `1`.
-after each change, listen closely to the pattern you created. Look at the sequencer and how the trigs are placed. You will master the spinal language quickly.
+
+- After each change, listen closely to the pattern you created.
+- Look at the sequencer and how the trigs are placed.
+
+You will master the spinal language quickly.
 
 ## events on a grid
