@@ -21,9 +21,15 @@ test if your setup is good to go:
 
 ## Hello World
 the 'hello world' of step sequencer programming is probably a 4/4 kick drum. Start with an empty pattern on the drum machine.
-Then type the following into the spinal interpreter and hit Return:
+Then type the following into the spinal interpreter, then hit Return:
 ```
-trig BD 1^16'4
+trig bd 1^16'4
 ```
 press play on your drum computer - you should now hear a 4/4 bass drum pattern.
-the command above translates to: **trigger the bass drum track in the range of steps 1 to 16, with an interval of 4 between each step.**
+the command above translates to: **trigger the bass-drum track in the step range 1 to 16, with an interval of 4 steps.**
+
+try to change the command a bit, for example change the `4` to a different number such as `3`, hit Return again.
+try this on different tracks, e.g. `trig sd 1^16'4` for the snare-drum track.
+also try different ranges, such as `2^8'4`. the interval `'4` is optional - you can ommit this, e.g.: `1^16`. The interval is then `1`.
+
+## events on a grid
