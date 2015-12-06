@@ -12,11 +12,16 @@ Let's get going
 
 ## Setup
 you need a Rytm drum computer and a Mac running the spinal application:
-- Connect the Drum machine to your Mac via USB.
+- Connect the drum machine to your Mac via USB.
 - on the Rytm drum computer, make sure that USB-MIDI communication is enabled.
 - Disable Overbridge-Mode on the Rytm drum computer.
 
 test if your setup is good to go:
-- Launch the app, and press CMD+1 on your keyboard. The active sequencer pattern of your drum machine appears in the grid display. Make changes to the sequence, and hit CMD+1 again. The changes you made should be reflected in the grid display.
+- Launch the app, and press CMD+1 on your computer keyboard. The active sequencer pattern of your drum machine appears in the grid display. Make changes to the sequence, and hit CMD+1 again. The changes you made should be reflected in the grid display.
 
-## The Language
+## Hello World
+the 'hello world' of step sequencer programming is probably a 4/4 kick drum.
+type the following into the spinal interpreter:
+    trig BD 1^16'4
+
+bla.
