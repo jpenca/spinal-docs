@@ -31,7 +31,8 @@ the command above translates to: **trigger the bass-drum track in the step range
 If you like, try to change the command a bit, for example change the `4` to a different number such as `3`, hit Return again.
 try different tracks, e.g. `trig sd 1^16'4` for the snare-drum track.
 also try different ranges, such as `2^8'4`.
-the interval `'4` is optional. For example, try: `1^16`. The interval is then simply `1`.
+
+the interval `'4` is optional. For example, try: `1^16`. The interval then simply becomes `1`.
 
 - After each change, listen closely to the pattern you created.
 - Look at the sequencer and how the trigs are placed.
