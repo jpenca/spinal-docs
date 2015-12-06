@@ -23,7 +23,7 @@ test if your setup is good to go:
 the 'hello world' of step sequencer programming is probably a 4/4 kick drum. Start with an empty pattern on the drum machine.
 Then type the following into the spinal interpreter and hit Return:
 ```
-    trig BD 1^16'4
+trig BD 1^16'4
 ```
 press play on your drum computer - you should now hear a 4/4 bass drum pattern.
 the command above translates to: **trigger the bass drum track in the range of steps 1 to 16, with an interval of 4 between each step.**
