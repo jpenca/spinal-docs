@@ -28,7 +28,7 @@ trig bd 1^16'4
 press play on your drum computer - you should now hear a 4/4 bass drum pattern.
 the command above translates to: **trigger the bass-drum track in the step range 1 to 16, with an interval of 4 steps.**
 
-to get familiar with spinal, try to change the command a bit, for example change the `4` to a different number such as `3`, hit Return again.
+If you like, try to change the command a bit, for example change the `4` to a different number such as `3`, hit Return again.
 try different tracks, e.g. `trig sd 1^16'4` for the snare-drum track.
 also try different ranges, such as `2^8'4`.
 the interval `'4` is optional. For example, try: `1^16`. The interval is then simply `1`.
