@@ -45,9 +45,10 @@ The basic building block for that is the range-loop expression - a powerful tool
 **It is essential that you learn how to use the range-loop.** Once you know how it works, you have learned most of the spinal language already.
 
 ## Trig Parameters
-| Arg Name            | Parameter         | min         | max       | unit                             |
-| ------------------- | ----------------- | -----------:| ---------:| ------------------               |
-| not:                | Trig note         | -24         | 24        | MIDI note (integer)              |
-| vel:                | Trig velocity     |  1          | 127       | MIDI velocity (int)              |
-| len:                | Trig length       |  0          | 127       | step length (float)              |
-| trc:                | Trig condition    |  0          | 64        | integer (see macro documentation)|
+| Arg Name            | Parameter            | min         | max       | unit                             |
+| ------------------- | -------------------- | -----------:| ---------:| ------------------               |
+| not:                | Trig note            | -24         | 24        | MIDI note (integer)              |
+| vel:                | Trig velocity        |  1          | 127       | MIDI velocity (int)              |
+| len:                | Trig length          |  0          | 127       | step length (float)              |
+| trc:                | Trig condition       |  0          | 64        | integer (see macro documentation)|
+| syn:                | Synth Enable Flag    |  0          | 1         | integer                          |
