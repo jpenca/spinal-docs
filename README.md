@@ -52,7 +52,7 @@ These parameters are available for every sequencer trig. There is no limit to ho
 | not:                | Trig note                 | -24         | 24        | MIDI note semitones (integer)            |
 | vel:                | Trig velocity             |  1          | 127       | MIDI velocity (int)                      |
 | len:                | Trig length               |  0          | 127       | step length (float),  e.g. 1 = 1/16 note |
-| trc:                | Trig condition            |  0          | 64        | integer or macro e.g. "prb.75","mod.1.3" |
+| trc:                | Trig condition            |  0          | 64        | integer or macro e.g. `prb.75`,`mod.1.3` |
 | syn:                | Synth Enable Flag         |  0          | 1         | integer                                  |
 | smp:                | Sample Enable Flag        |  0          | 1         | integer                                  |
 | env:                | Envelope Restart Flag     |  0          | 1         | integer                                  |
