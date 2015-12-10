@@ -44,6 +44,60 @@ The main design goal of spinal is to give you the ability to express yourself in
 The basic building block for that is the range-loop expression - a powerful tool for creating intricate sequences.
 **It is essential that you learn how to use the range-loop.** Once you know how it works, you have learned most of the spinal language already.
 
+Everywhere in spinal where a numerical value is used, you can use a range-loop expression.
+
+
+#### Range
+To specify a numerical range, use the `^` operator:
+`1^16` means `1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16`.
+
+#### Interval
+To specify an interval within a range, do it like this:
+`1^16'4` means `1,5,9,13`.
+
+You can chain multiple intervals like this:
+`1^16'4'3'2` means `1,5,8,10,14`.
+Intervals will take turns. After the last interval is used, the range-loop will wrap to the first interval again.
+
+Intervals can also be negative numbers or 0:
+`1^16'3'-1'0` means `1,4,3,3,6,5,5,8,7,7,10,9,9,12,11,11,14,13,13,16,15,15`
+
+#### Array
+You can specify a chain of numerical values directly, without the range operator:
+
+`1'2'3'5` means `1,2,3,5`.
+`1` means `1`.
+`2` means `2`.
+etc...
+
+####Wrapping
+A range-loop will wrap around once it reaches its end. In certain cases, this is an indicator for the function to return, e.g. in the `trig` function, if the step range wraps, the function will break. But in most other cases, the wrapping behaviour is used to create looping number sequences, for example looping MIDI note values.
+
+`1^3` loops as such: `1,2,3,1,2,3,1,.....`
+
+`1^4'3` loops like this: `1,3,2,1,3,2,1,.....`
+
+#### Arithmetic
+You can do arithmetic with range-loops. Arithmetic operators are: `=,-,*,/`
+`2*1^3` means `2,4,6`
+`1+2` means `3`
+Operator precedence (order of operation) is currently conceptionally buggy. If in doubt, use parentheses.
+
+#### Parentheses
+You can use parentheses to indicate your preferred order of arithmetic operations.
+Example: 
+`(1+2)*3` means `9`
+`1+2*3` means `7`
+
+#### Nesting
+It is fun to nest range-loops. This can be used to create complex sequences.
+
+`1'2'3` means `1,2,3`
+`1'(2'4)'3` means `1'2'3'1'4'3`
+
+The `2'4` above is its own range-loop, and it is nested within the `1'...'3` loop.
+Fun!
+
 ## Trig Properties
 These parameters are available for every sequencer trig. There is no limit to how many of these can be enabled in a pattern.
 (That is, any step can have any of these enabled. There are 64x12=768 maximum individual steps in a pattern.)
