@@ -72,7 +72,7 @@ These parameters are available for every sequencer trig. There is no limit to ho
 ## Parameter Locks
 There are a total of 72 available parameter locks available in a sequencer pattern. This means you can automate 72 unique parameters across all 12 sequencer tracks. Keep this in mind! When using p-locks in all tracks, it is easy to fill up the lock memory.
 
-### Synth Parameters
+#### Synth Parameters
 | Arg Name            | Parameter                 | min         | max       | unit                                                   |
 | ------------------- | ------------------------- | -----------:| ---------:| -----------------------------------------              |
 | syn.0:              | Synth Parameter 0         | 0           | 127       | integer (some synth params unavailable on some tracks) |
@@ -84,7 +84,7 @@ There are a total of 72 available parameter locks available in a sequencer patte
 | syn.6:              | Synth Parameter 6         | 0           | 127       | integer                                                |
 | syn.7:              | Synth Parameter 7         | 0           | 127       | integer                                                |
 
-### Sample Parameters
+#### Sample Parameters
 | Arg Name            | Parameter                 | min         | max       | unit                                                   |
 | ------------------- | ------------------------- | -----------:| ---------:| -----------------------------------------              |
 | smp.tun:            | Sample Tuning             | -24         | 24        | float semitones (uses finetune parameter)              |
@@ -95,6 +95,19 @@ There are a total of 72 available parameter locks available in a sequencer patte
 | smp.end:            | Sample End Point          | 0           | 120       | integer                                                |
 | smp.lop:            | Sample Loop Flag          | 0           | 1         | integer                                                |
 | smp.lev:            | Sample Playback Volume    | 0           | 127       | integer                                                |
+
+#### Filter Parameters
+| Arg Name            | Parameter                 | min         | max       | unit                                                   |
+| ------------------- | ------------------------- | -----------:| ---------:| -----------------------------------------              |
+| fil.atk:            | Filter Envelope Attack    | 0           | 127       | integer                                                |
+| fil.dec:            | Filter Envelope Decay     | 0           | 127       | integer                                                |
+| fil.sus:            | Filter Envelope Sustain   | 0           | 127       | integer                                                |
+| fil.rel:            | Filter Envelope Release   | 0           | 127       | integer (0 == no sample)                               |
+| fil.frq:            | Filter Cutoff Frequency   | 0           | 127       | integer semitones                                      |
+| fil.res:            | Filter Resonance          | 0           | 127       | integer                                                |
+| fil.typ:            | Filter Type               | 0           | 6         | integer                                                |
+| fil.env:            | Filter Env Mod Depth      | 0           | 127       | integer                                                |
+
 
 etc...
 
