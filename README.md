@@ -58,6 +58,7 @@ These parameters are available for every sequencer trig. There is no limit to ho
 | env:                | Envelope Restart Flag     |  0          | 1         | integer                                  |
 | lfo:                | LFO Restart Flag          |  0          | 1         | integer                                  |
 | snd:                | Sound Lock                |  0          | 127       | integer (0 == no lock)                   |
+| mit:                | Micro-Timing              |  -23        | 23        | integer                                  |
 | mut:                | Trig Mute Flag            |  0          | 1         | integer                                  |
 | acc:                | Trig Accent Flag          |  0          | 1         | integer                                  |
 | swi:                | Trig Swing Flag           |  0          | 1         | integer                                  |
@@ -71,8 +72,25 @@ These parameters are available for every sequencer trig. There is no limit to ho
 ## Parameter Locks
 There are a total of 72 available parameter locks available in a sequencer pattern. This means you can automate 72 unique parameters across all 12 sequencer tracks. Keep this in mind! When using p-locks in all tracks, it is easy to fill up the lock memory.
 
-| Arg Name            | Parameter                 | min         | max       | unit                                     |
-| ------------------- | ------------------------- | -----------:| ---------:| ---------------------------------------- |
-| not:                | Trig note                 | -24         | 24        | MIDI note semitones (integer)            |
+| Arg Name            | Parameter                 | min         | max       | unit                                                                |
+| ------------------- | ------------------------- | -----------:| ---------:| -----------------------------------------                           |
+| syn.0:              | Synth Parameter 0         | 0           | 127       | integer (certain synth params are unavailable on certain tracks)    |
+| syn.1:              | Synth Parameter 1         | 0           | 127       | integer                                                             |
+| syn.2:              | Synth Parameter 2         | 0           | 127       | integer                                                             |
+| syn.3:              | Synth Parameter 3         | 0           | 127       | integer                                                             |
+| syn.4:              | Synth Parameter 4         | 0           | 127       | integer                                                             |
+| syn.5:              | Synth Parameter 5         | 0           | 127       | integer                                                             |
+| syn.6:              | Synth Parameter 6         | 0           | 127       | integer                                                             |
+| syn.7:              | Synth Parameter 7         | 0           | 127       | integer                                                             |
+| smp.tun:            | Sample Tuning             | -24         | 24        | float semitones (uses finetune parameter)                           |
+| smp.fin:            | Sample Fine Tuning        | -64         | 63        | float                                                               |
+| smp.brr:            | Sample Bitrate Reduction  | 0           | 127       | integer                                                             |
+| smp.smp:            | Sample Selection          | 0           | 127       | integer (0 == no sample)                                            |
+| smp.sta:            | Sample Start Point        | 0           | 120       | integer                                                             |
+| smp.end:            | Sample End Point          | 0           | 120       | integer                                                             |
+| smp.lop:            | Sample Loop Flag          | 0           | 1         | integer                                                             |
+| smp.lev:            | Sample Volume             | 0           | 127       | integer                                                             |
+
+
 
 
