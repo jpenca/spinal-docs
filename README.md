@@ -159,7 +159,7 @@ Note: Synth Parameters differ between tracks. Not all parameters are available o
 | fil.atk:            | Filter Envelope Attack    | 0           | 127       | integer                                                |
 | fil.dec:            | Filter Envelope Decay     | 0           | 127       | integer                                                |
 | fil.sus:            | Filter Envelope Sustain   | 0           | 127       | integer                                                |
-| fil.rel:            | Filter Envelope Release   | 0           | 127       | integer (0 == no sample)                               |
+| fil.rel:            | Filter Envelope Release   | 0           | 127       | integer                                                |
 | fil.frq:            | Filter Cutoff Frequency   | 0           | 127       | integer semitones                                      |
 | fil.res:            | Filter Resonance          | 0           | 127       | integer                                                |
 | fil.typ:            | Filter Type               | 0           | 6         | integer                                                |
