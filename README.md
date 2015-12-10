@@ -46,6 +46,7 @@ The basic building block for that is the range-loop expression - a powerful tool
 
 ## Trig Properties
 These parameters are available for every sequencer trig. There is no limit to how many of these can be enabled in a pattern.
+(That is, any step can have any of these enabled. There are 64x12=768 maximum individual steps in a pattern.)
 
 | Arg Name            | Parameter                 | min         | max       | unit                                     |
 | ------------------- | ------------------------- | -----------:| ---------:| ---------------------------------------- |
@@ -134,7 +135,3 @@ Note: Synth Parameters differ between tracks. Not all parameters are available o
 | lfo.sph:            | LFO Start Phase           | 0           | 127       | integer                                                |
 | lfo.mod:            | LFO Mode                  | 0           | 4         | integer 0 == FREE, 4 == HALF                           |
 | lfo.dep:            | LFO Modulation Depth      | -128        | 128       | float                                                  |
-
-
-
-
