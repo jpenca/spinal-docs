@@ -45,10 +45,21 @@ The basic building block for that is the range-loop expression - a powerful tool
 **It is essential that you learn how to use the range-loop.** Once you know how it works, you have learned most of the spinal language already.
 
 ## Trig Parameters
-| Arg Name            | Parameter            | min         | max       | unit                             |
-| ------------------- | -------------------- | -----------:| ---------:| ------------------               |
-| not:                | Trig note            | -24         | 24        | MIDI note (integer)              |
-| vel:                | Trig velocity        |  1          | 127       | MIDI velocity (int)              |
-| len:                | Trig length          |  0          | 127       | step length (float)              |
-| trc:                | Trig condition       |  0          | 64        | integer (see macro documentation)|
-| syn:                | Synth Enable Flag    |  0          | 1         | integer                          |
+| Arg Name            | Parameter                 | min         | max       | unit                                |
+| ------------------- | ------------------------- | -----------:| ---------:| ----------------------------------- |
+| not:                | Trig note                 | -24         | 24        | MIDI note (integer)                 |
+| vel:                | Trig velocity             |  1          | 127       | MIDI velocity (int)                 |
+| len:                | Trig length               |  0          | 127       | step length (float) - 1 = 1/16 note |
+| trc:                | Trig condition            |  0          | 64        | integer (see macro documentation)   |
+| syn:                | Synth Enable Flag         |  0          | 1         | integer                             |
+| smp:                | Sample Enable Flag        |  0          | 1         | integer                             |
+| env:                | Envelope Enable Flag      |  0          | 1         | integer                             |
+| lfo:                | LFO Enable Flag           |  0          | 1         | integer                             |
+|  rt:                | Retrig Enable Flag        |  0          | 1         | integer                             |
+| rtr:                | Retrig Rate               |  0          | 1         | float e.g. 1/32, 1/64,...           |
+| rtv:                | Retrig Velocity Ramp      |  -128       | 128       | integer                             |
+| rtl:                | Retrig Length             |  0          | 127       | step length (float) - 1 = 1/16 note |
+| mut:                | Trig Mute Flag            |  0          | 1         | integer                             |
+| acc:                | Trig Accent Flag          |  0          | 1         | integer                             |
+| swi:                | Trig Swing Flag           |  0          | 1         | integer                             |
+| sli:                | Trig Parameter Slide Flag |  0          | 1         | integer                             |
