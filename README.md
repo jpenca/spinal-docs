@@ -50,3 +50,4 @@ The basic building block for that is the range-loop expression - a powerful tool
 | not:                | Trig note         | -24         | 24        | MIDI note (integer)|
 | vel:                | Trig velocity     |  1          | 127       | MIDI velocity (int)|
 | len:                | Trig length       |  0          | 127       | step length (float)|
+| trc:                | Trig condition    |  0          | 64        | integer            | see macros
