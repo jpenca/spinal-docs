@@ -133,7 +133,7 @@ Note: Synth Parameters differ between tracks. Not all parameters are available o
 | lfo.wav:            | LFO Waveform              | 0           | 6         | integer 0 == TRI, ...,  6 == RND                       |
 | lfo.sph:            | LFO Start Phase           | 0           | 127       | integer                                                |
 | lfo.mod:            | LFO Mode                  | 0           | 4         | integer 0 == FREE, 4 == HALF                           |
-| lfo.dep:            | LFO Modulation Depth      | 0           | 127       | integer                                                |
+| lfo.dep:            | LFO Modulation Depth      | -128        | 128       | float                                                  |
 
 
 
