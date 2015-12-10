@@ -44,7 +44,7 @@ The main design goal of spinal is to give you the ability to express yourself in
 The basic building block for that is the range-loop expression - a powerful tool for creating intricate sequences.
 **It is essential that you learn how to use the range-loop.** Once you know how it works, you have learned most of the spinal language already.
 
-## Trig Parameters
+## Trig Properties
 These parameters are available for every sequencer trig. There is no limit to how many of these can be enabled in a pattern.
 
 | Arg Name            | Parameter                 | min         | max       | unit                                     |
@@ -70,12 +70,14 @@ These parameters are available for every sequencer trig. There is no limit to ho
 
 
 ## Parameter Locks
-There are a total of 72 available parameter locks available in a sequencer pattern. This means you can automate 72 unique parameters across all 12 sequencer tracks. Keep this in mind! When using p-locks in all tracks, it is easy to fill up the lock memory.
+There are a total of 72 available slots for parameter locks available in the memory of a sequencer pattern. This means you can automate 72 unique parameters across all 12 sequencer tracks. Keep this in mind! When using p-locks on several tracks, it is easy to hit the memory ceiling.
 
 #### Synth Parameters
+Note: Synth Parameters differ between tracks. Not all parameters are available on all tracks.
+
 | Arg Name            | Parameter                 | min         | max       | unit                                                   |
 | ------------------- | ------------------------- | -----------:| ---------:| -----------------------------------------              |
-| syn.0:              | Synth Parameter 0         | 0           | 127       | integer (some synth params unavailable on some tracks) |
+| syn.0:              | Synth Parameter 0         | 0           | 127       | integer                                                |
 | syn.1:              | Synth Parameter 1         | 0           | 127       | integer                                                |
 | syn.2:              | Synth Parameter 2         | 0           | 127       | integer                                                |
 | syn.3:              | Synth Parameter 3         | 0           | 127       | integer                                                |
@@ -106,10 +108,32 @@ There are a total of 72 available parameter locks available in a sequencer patte
 | fil.frq:            | Filter Cutoff Frequency   | 0           | 127       | integer semitones                                      |
 | fil.res:            | Filter Resonance          | 0           | 127       | integer                                                |
 | fil.typ:            | Filter Type               | 0           | 6         | integer                                                |
-| fil.env:            | Filter Env Mod Depth      | 0           | 127       | integer                                                |
+| fil.env:            | Filter Env Mod Depth      | -64         | 63        | integer                                                |
 
+#### Amp Parameters
+| Arg Name            | Parameter                 | min         | max       | unit                                                   |
+| ------------------- | ------------------------- | -----------:| ---------:| -----------------------------------------              |
+| amp.atk:            | Amp Envelope Attack       | 0           | 127       | integer                                                |
+| amp.hld:            | Amp Envelope Hold         | 0           | 127       | integer                                                |
+| amp.dec:            | Amp Envelope Decay        | 0           | 127       | integer                                                |
+| amp.ovr:            | Amp Overdrive Amount      | 0           | 127       | integer                                                |
+| amp.del:            | Amp Delay Send            | 0           | 127       | integer                                                |
+| amp.rev:            | Amp Reverb Send           | 0           | 127       | integer                                                |
+| amp.pan:            | Amp Panning               | -63         | 64        | integer                                                |
+| amp.vol:            | Amp Volume                | 0           | 127       | integer                                                |
+| amp.acc:            | Amp Accent Amount         | 0           | 127       | integer                                                |
 
-etc...
+#### LFO Parameters
+| Arg Name            | Parameter                 | min         | max       | unit                                                   |
+| ------------------- | ------------------------- | -----------:| ---------:| -----------------------------------------              |
+| lfo.spd:            | LFO Speed                 | -64         | 63        | integer                                                |
+| lfo.mul:            | LFO Speed Multiplier      | 0           | 23        | integer                                                |
+| lfo.fad:            | LFO Fade In/Out           | -64         | 63        | integer                                                |
+| lfo.dst:            | LFO Destination           | syn.lev     | amp.rev   | parameter name                                         |
+| lfo.wav:            | LFO Waveform              | 0           | 6         | integer 0 == TRI, ...,  6 == RND                       |
+| lfo.sph:            | LFO Start Phase           | 0           | 127       | integer                                                |
+| lfo.mod:            | LFO Mode                  | 0           | 4         | integer 0 == FREE, 4 == HALF                           |
+| lfo.dep:            | LFO Modulation Depth      | 0           | 127       | integer                                                |
 
 
 
