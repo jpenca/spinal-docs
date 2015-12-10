@@ -71,21 +71,21 @@ These parameters are available for every sequencer trig. There is no limit to ho
 
 
 ## Parameter Locks
-There are a total of 72 available slots for parameter locks available in the memory of a sequencer pattern. This means you can automate 72 unique parameters across all 12 sequencer tracks. Keep this in mind! When using p-locks on several tracks, it is easy to hit the memory ceiling.
+There are a total of 72 available slots for parameter locks available in the memory of a sequencer pattern. This means you can automate 72 unique parameters across all 12 sequencer tracks. But if a paremeter is locked for a track, any step in this track can have a lock. Keep this in mind! When using p-locks on several tracks, it is easy to hit the memory ceiling.
 
 #### Synth Parameters
 Note: Synth Parameters differ between tracks. Not all parameters are available on all tracks.
 
 | Arg Name            | Parameter                 | min         | max       | unit                                                   |
 | ------------------- | ------------------------- | -----------:| ---------:| -----------------------------------------              |
-| syn.0:              | Synth Parameter 0         | 0           | 127       | integer                                                |
+| syn.0: or syn.tun:  | Synth Parameter 0         | 0           | 127       | integer                                                |
 | syn.1:              | Synth Parameter 1         | 0           | 127       | integer                                                |
 | syn.2:              | Synth Parameter 2         | 0           | 127       | integer                                                |
-| syn.3:              | Synth Parameter 3         | 0           | 127       | integer                                                |
+| syn.3: or syn.dec:  | Synth Parameter 3         | 0           | 127       | integer                                                |
 | syn.4:              | Synth Parameter 4         | 0           | 127       | integer                                                |
 | syn.5:              | Synth Parameter 5         | 0           | 127       | integer                                                |
 | syn.6:              | Synth Parameter 6         | 0           | 127       | integer                                                |
-| syn.7:              | Synth Parameter 7         | 0           | 127       | integer                                                |
+| syn.7: or syn.lev:  | Synth Parameter 7         | 0           | 127       | integer                                                |
 
 #### Sample Parameters
 | Arg Name            | Parameter                 | min         | max       | unit                                                   |
