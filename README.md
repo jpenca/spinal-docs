@@ -45,7 +45,7 @@ The basic building block for that is the range-loop expression - a powerful tool
 **It is essential that you learn how to use the range-loop.** Once you know how it works, you have learned most of the spinal language already.
 
 ## Trig Parameters
-These parameters are available for every sequencer trig. There is no limit to how many of these can be locked on specific steps.
+These parameters are available for every sequencer trig. There is no limit to how many of these can be enabled in a pattern.
 
 | Arg Name            | Parameter                 | min         | max       | unit                                     |
 | ------------------- | ------------------------- | -----------:| ---------:| ---------------------------------------- |
@@ -89,7 +89,9 @@ There are a total of 72 available parameter locks available in a sequencer patte
 | smp.sta:            | Sample Start Point        | 0           | 120       | integer                                                |
 | smp.end:            | Sample End Point          | 0           | 120       | integer                                                |
 | smp.lop:            | Sample Loop Flag          | 0           | 1         | integer                                                |
-| smp.lev:            | Sample PLayback Volume    | 0           | 127       | integer                                                |
+| smp.lev:            | Sample Playback Volume    | 0           | 127       | integer                                                |
+
+etc...
 
 
 
