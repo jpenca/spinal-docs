@@ -47,21 +47,32 @@ The basic building block for that is the range-loop expression - a powerful tool
 ## Trig Parameters
 These parameters are available for every sequencer trig. There is no limit to how many of these can be locked on specific steps.
 
-| Arg Name            | Parameter                 | min         | max       | unit                                |
-| ------------------- | ------------------------- | -----------:| ---------:| ----------------------------------- |
-| not:                | Trig note                 | -24         | 24        | MIDI note (integer)                 |
-| vel:                | Trig velocity             |  1          | 127       | MIDI velocity (int)                 |
-| len:                | Trig length               |  0          | 127       | step length (float),  1 = 1/16 note |
-| trc:                | Trig condition            |  0          | 64        | integer (see macro documentation)   |
-| syn:                | Synth Enable Flag         |  0          | 1         | integer                             |
-| smp:                | Sample Enable Flag        |  0          | 1         | integer                             |
-| env:                | Envelope Enable Flag      |  0          | 1         | integer                             |
-| lfo:                | LFO Enable Flag           |  0          | 1         | integer                             |
-|  rt:                | Retrig Enable Flag        |  0          | 1         | integer                             |
-| rtr:                | Retrig Rate               |  0          | 1         | float e.g. 1/32, 1/64,...           |
-| rtv:                | Retrig Velocity Ramp      |  -128       | 128       | integer                             |
-| rtl:                | Retrig Length             |  0          | 127       | step length (float), 1 = 1/16 note  |
-| mut:                | Trig Mute Flag            |  0          | 1         | integer                             |
-| acc:                | Trig Accent Flag          |  0          | 1         | integer                             |
-| swi:                | Trig Swing Flag           |  0          | 1         | integer                             |
-| sli:                | Trig Parameter Slide Flag |  0          | 1         | integer                             |
+| Arg Name            | Parameter                 | min         | max       | unit                                     |
+| ------------------- | ------------------------- | -----------:| ---------:| ---------------------------------------- |
+| not:                | Trig note                 | -24         | 24        | MIDI note semitones (integer)            |
+| vel:                | Trig velocity             |  1          | 127       | MIDI velocity (int)                      |
+| len:                | Trig length               |  0          | 127       | step length (float),  e.g. 1 = 1/16 note |
+| trc:                | Trig condition            |  0          | 64        | integer or macro e.g. "prb.75","mod.1.3" |
+| syn:                | Synth Enable Flag         |  0          | 1         | integer                                  |
+| smp:                | Sample Enable Flag        |  0          | 1         | integer                                  |
+| env:                | Envelope Restart Flag     |  0          | 1         | integer                                  |
+| lfo:                | LFO Restart Flag          |  0          | 1         | integer                                  |
+| snd:                | Sound Lock                |  0          | 127       | integer (0 == no lock)                   |
+| mut:                | Trig Mute Flag            |  0          | 1         | integer                                  |
+| acc:                | Trig Accent Flag          |  0          | 1         | integer                                  |
+| swi:                | Trig Swing Flag           |  0          | 1         | integer                                  |
+| sli:                | Trig Parameter Slide Flag |  0          | 1         | integer                                  |
+|  rt:                | Retrig Enable Flag        |  0          | 1         | integer                                  |
+| rtr:                | Retrig Rate               |  0          | 1         | float e.g. 0.5, 1/32, 1/64, ...          |
+| rtv:                | Retrig Velocity Ramp      |  -128       | 128       | integer                                  |
+| rtl:                | Retrig Length             |  0          | 127       | step length (float), 1 = 1/16 note       |
+
+
+## Parameter Locks
+There are a total of 72 available parameter locks available in a sequencer pattern. This means you can automate 72 unique parameters across all 12 sequencer tracks. Keep this in mind! When using p-locks in all tracks, it is easy to fill up the lock memory.
+
+| Arg Name            | Parameter                 | min         | max       | unit                                     |
+| ------------------- | ------------------------- | -----------:| ---------:| ---------------------------------------- |
+| not:                | Trig note                 | -24         | 24        | MIDI note semitones (integer)            |
+
+
