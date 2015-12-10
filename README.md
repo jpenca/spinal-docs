@@ -72,6 +72,7 @@ These parameters are available for every sequencer trig. There is no limit to ho
 ## Parameter Locks
 There are a total of 72 available parameter locks available in a sequencer pattern. This means you can automate 72 unique parameters across all 12 sequencer tracks. Keep this in mind! When using p-locks in all tracks, it is easy to fill up the lock memory.
 
+### Synth Parameters
 | Arg Name            | Parameter                 | min         | max       | unit                                                   |
 | ------------------- | ------------------------- | -----------:| ---------:| -----------------------------------------              |
 | syn.0:              | Synth Parameter 0         | 0           | 127       | integer (some synth params unavailable on some tracks) |
@@ -82,6 +83,10 @@ There are a total of 72 available parameter locks available in a sequencer patte
 | syn.5:              | Synth Parameter 5         | 0           | 127       | integer                                                |
 | syn.6:              | Synth Parameter 6         | 0           | 127       | integer                                                |
 | syn.7:              | Synth Parameter 7         | 0           | 127       | integer                                                |
+
+### Sample Parameters
+| Arg Name            | Parameter                 | min         | max       | unit                                                   |
+| ------------------- | ------------------------- | -----------:| ---------:| -----------------------------------------              |
 | smp.tun:            | Sample Tuning             | -24         | 24        | float semitones (uses finetune parameter)              |
 | smp.fin:            | Sample Fine Tuning        | -64         | 63        | float                                                  |
 | smp.brr:            | Sample Bitrate Reduction  | 0           | 127       | integer                                                |
