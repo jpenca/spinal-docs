@@ -87,19 +87,25 @@ A range-loop will wrap around once it reaches its end. In certain cases, this is
 #### Arithmetic
 You can do arithmetic with range-loops. Arithmetic operators are: `=,-,*,/`
 `2*1^3` means `2,4,6`
+
 `1+2` means `3`
+
 Operator precedence (order of operation) is currently conceptionally buggy. If in doubt, use parentheses.
 
 #### Parentheses
 You can use parentheses to indicate your preferred order of arithmetic operations.
 Example:
+
 `(1+2)*3` means `9`
+
 `1+2*3` means `7`
+
 
 #### Nesting
 It is fun to nest range-loops. This can be used to create complex sequences.
 
 `1'2'3` means `1,2,3`
+
 `1'(2'4)'3` means `1'2'3'1'4'3`
 
 The `2'4` above is its own range-loop, and it is nested within the `1'...'3` loop.
