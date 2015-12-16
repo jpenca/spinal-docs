@@ -1,5 +1,7 @@
 # spinal-docs
-documentation for the spinal environment
+
+![alt text][ffwd-gif]
+
 
 
 # What is spinal?
@@ -202,3 +204,7 @@ Note: Synth Parameters differ between tracks. Not all parameters are available o
 | lfo.sph:            | LFO Start Phase           | 0           | 127       | integer                                                |
 | lfo.mod:            | LFO Mode                  | 0           | 4         | integer 0 == FREE, 4 == HALF                           |
 | lfo.dep:            | LFO Modulation Depth      | -128        | 128       | float                                                  |
+
+
+
+[ffwd-gif]: https://raw.githubusercontent.com/jpenca/spinal-docs/master/spinal.gif "spinal fast forward"
