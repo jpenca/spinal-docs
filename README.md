@@ -3,7 +3,7 @@ documentation for the spinal environment
 
 
 # What is spinal?
-spinal is an environment for programming step sequencers - currently it works exclusively with the [Elektron Analog Rytm](http://eu.elektron.se/drum-machines/analog-rytm/) drum computer. The spinal language is designed to let you rapidly express musical intentions in the sequencer grid.
+spinal is an environment for programming step sequencers - currently it works exclusively with the [Elektron Analog Rytm](http://eu.elektron.se/drum-machines/analog-rytm/) drum computer. The spinal language is designed from scratch to let you rapidly express musical intentions in a sequencer grid.
 
 Spinal is being implemented as a Mac application which interprets the language and communicates with the drum machine.
 
