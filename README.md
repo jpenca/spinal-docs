@@ -53,21 +53,28 @@ To specify a numerical range, use the `^` operator:
 
 #### Interval
 To specify an interval within a range, do it like this:
+
 `1^16'4` means `1,5,9,13`.
 
 You can chain multiple intervals like this:
+
 `1^16'4'3'2` means `1,5,8,10,14`.
+
 Intervals will take turns. After the last interval is used, the range-loop will wrap to the first interval again.
 
 Intervals can also be negative numbers or 0:
+
 `1^16'3'-1'0` means `1,4,3,3,6,5,5,8,7,7,10,9,9,12,11,11,14,13,13,16,15,15`
 
 #### Array
 You can specify a chain of numerical values directly, without the range operator:
 
 `1'2'3'5` means `1,2,3,5`.
+
 `1` means `1`.
+
 `2` means `2`.
+
 etc...
 
 ####Wrapping
@@ -85,7 +92,7 @@ Operator precedence (order of operation) is currently conceptionally buggy. If i
 
 #### Parentheses
 You can use parentheses to indicate your preferred order of arithmetic operations.
-Example: 
+Example:
 `(1+2)*3` means `9`
 `1+2*3` means `7`
 
