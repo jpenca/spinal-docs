@@ -207,4 +207,4 @@ Note: Synth Parameters differ between tracks. Not all parameters are available o
 
 
 
-[ffwd-gif]: https://raw.githubusercontent.com/jpenca/spinal-docs/master/spinal.gif "spinal fast forward"
+[ffwd-gif]: https://raw.githubusercontent.com/jpenca/spinal-docs/master/spinal.gif "commands in this gif are randomly generated from a Max/MSP patch and sent over via UDP"
