@@ -249,9 +249,9 @@ Note: Synth Parameters differ between tracks. Not all parameters are available o
 
 
 
-## Built-in Functions
+## Built-in Numeric Functions
 
-Spinal comes with a set of built-in functions which generate numbers that you can use for your sequencer programming adventures.
+Spinal comes with a set of built-in functions which produce numbers that you can use for your sequencer programming adventures.
 The syntax for using a function is: 
 
 `function-name[<argument>,<argument>,<argument>,....]`
