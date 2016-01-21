@@ -269,11 +269,19 @@ For example:
 ###List of Functions
 
 #### RANDI - Random Integers
-`randi[]` - random integer 0-1
+`randi[]` - random integer 0 to 1
 
-`randi[<max>]` - random integer 0-max, e.g: `randi[3]` will spill number between 0 to 3.
+`randi[<max>]` - random integer 0-max, e.g: `randi[3]` will spill numbers between 0 to 3.
 	
-`randi[<min>,<max>]` - random integer min-max, e.g: `randi[-3,3]` will spill number between -3 to 3.
+`randi[<min>,<max>]` - random integer min-max, e.g: `randi[-3,3]` will spill numbers between -3 and 3.
+	
+#### RANDF - Random Fractional Numbers
+
+`randf[]` - random float 0.0 to 1.0
+
+`randf[<max>]` - random float 0.0 to max, e.g: `randf[3.5]` will spill numbers between 0.0 and 3.5.
+	
+`randf[<min>,<max>]` - random float min-max, e.g: `randf[-3.5,3.5]` will spill numbers between -3.5 to 3.5.
 
 
 
