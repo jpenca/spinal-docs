@@ -23,7 +23,7 @@ Test if your setup is good to go:
 
 ## Hello World
 The 'hello world' of step sequencer programming is probably a 4/4 kick drum. Start with an empty pattern on the drum machine.
-Then type the following into the spinal interpreter, then hit Return:
+Then type the following into the spinal interpreter, then hit CMD+Return:
 ```
 trig bd 1^16'4
 ```
@@ -112,6 +112,39 @@ It is fun to nest range-loops. This can be used to create complex sequences.
 
 The `2'4` above is its own range-loop, and it is nested within the `1'...'3` loop.
 Fun!
+
+
+## The Trig Command
+The most powerful command in Spinal is the TRIG command. It's for programming events into the sequencer.
+It has the following syntax:
+
+`trig <track(s)> <step(s)> <optional:p-locks>`
+	
+`<track(s)>` determines in which track(s) note events should be placed. valid values are integer numbers from 0 to 11. 
+
+There are macros `BD, SD RS, CP, CP, BT, LT, MT, HT, CH, OH, CY, CB` corresponding to these numbers and you can simply use these.
+If you want to trigger notes in more than one track, use multiple tracks in a range-loop, such as `BD'SD`, which is the same as `0'1`.
+This means that the tracks will be alternating between the BD and SD track when generating notes.
+
+`<step(s)>` determines in which step(s) note events should be placed. valid values are floating point numbers from 1 to 64.
+the `<steps>` argument of course takes another range-loop, so if you put in `1^16`, steps 1-16 will be triggered.
+
+
+the optional P-LOCKS argument(s) will let you create sequencer automation. The syntax for this is:
+
+`parameter-name:parameter-value`, for example: `fil.frq:20'60'90` - this will set p-locks for the filter cutoff frequency and alternate between the provided values 20, 60 and 90.
+
+You can chain as many p-locks in one command as you like.
+
+for example:
+
+`trig bd'sd 1^16
+fil.frq:40'80
+smp.smp:20^28
+smp.tun:0'2'5'1`
+
+see below for a list of parameter names.
+
 
 ## Trig Properties
 These parameters are available for every sequencer trig. There is no limit to how many of these can be enabled in a pattern.
