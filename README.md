@@ -249,4 +249,31 @@ Note: Synth Parameters differ between tracks. Not all parameters are available o
 
 
 
+## Built-in Functions
+
+Spinal comes with a set of built-in functions which generate numbers that you can use for your sequencer programming adventures.
+The syntax for using a function is: 
+
+`function-name[<argument>,<argument>,<argument>,....]`
+	
+arguments are parameters for the function. Some of them are optional, and some functions work differently depending on how many arguments you put in.
+
+You can use functions everywhere where you can use numbers and range-loops.
+
+For example:
+
+`trig randi[bd,cp] 1^16` - This will pick tracks `bd'sd'rs'cp` at random, and put down note events in the step range 1 to 16.
+
+`trig lt 1^16 fil.frq:64+cyc[16]*32` - This will put down notes, and create a stepping sweep on the filter cutoff using p-locks, essentially giving you another LFO for free.
+
+###List of Functions
+
+`randi[]` - random integer 0-1
+
+`randi[<max>]` - random integer 0-max, e.g: `randi[3]` will spill number between 0-3.
+
+
+
+
+
 [ffwd-gif]: https://raw.githubusercontent.com/jpenca/spinal-docs/master/spinal.gif "commands in this gif are randomly generated from a Max/MSP patch and sent over via UDP"
