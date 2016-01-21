@@ -305,7 +305,7 @@ Experiment with adding or multiplying different oscillators!
 
 #### CYC - sine oscillator
 
-`cyc[<steps>]` - creates a sinoid wave in the range -1 to 1 which repeats every given steps. For example: `cyc[16]` will repeat every 16 steps.
+`cyc[<steps>]` - creates a sine wave in the range -1 to 1 which repeats every given steps. For example: `cyc[16]` will repeat every 16 steps.
 	
 `cyc[<steps>,<phase>]` - lets you specify a phase offset (0.0 - 1.0)
 	
