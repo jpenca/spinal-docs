@@ -145,13 +145,10 @@ smp.tun:0'2'5'1`
 
 you can also split the command over multiple lines in the editor for a better overview:
 
-`trig bd'sd 1^16
-
-fil.frq:40'80
-
-smp.smp:20^28
-
-smp.tun:0'2'5'1`
+    trig bd'sd 1^16
+    fil.frq:40'80
+    smp.smp:20^28
+    smp.tun:0'2'5'1`
 
 see below for a list of parameter names.
 
