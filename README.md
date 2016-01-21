@@ -329,6 +329,15 @@ this creates a more complex LFO shape by multiplying two different sine oscillat
 `pul[<steps>,<phase>,<pulsewidth>]` - lets you specify a pulsewidth (0.0 - 1.0)
 	
 	
+#### CHANCE - probability function
+
+`chance[<probability>]` - lets you specify a probability from 0.0 (not gonna happen) to 1.0 (definitely gonna happen). The output is either 0 or 1. 
+	
+This is very useful for setting any of the Rytm's TRIG FLAGS, such as whether or not to enable RETRIG for a certain step:
+
+`trig bd 1^16 rt:chance[.5]` - 50% chance for each of the trigs to have RETRIG enabled.
+	
+	
 	
 	
 	
