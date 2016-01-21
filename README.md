@@ -291,7 +291,8 @@ For example:
 	
 #### Oscillator functions
 
-Oscillators can be very useful for parameter lock programming. They will behave like the built in LFO in the Rytm when set to HOLD mode.
+Oscillators can be very useful for parameter lock programming. When used with p-locks, they are similar to the Rytm's built-in LFO in HOLD mode.
+Experiment with adding or multiplying different oscillators!
 
 #### CYC - sine oscillator
 
@@ -305,6 +306,32 @@ example:
 	fil.frq:64+cyc[16]*32
 	
 this creates a sweep on the filter cutoff frequency. the sweep loops every 16 steps, and is thus nicely synced to the sequence.
+
+    trig bd 1^16
+	fil.frq:64+cyc[16]*cyc[4]*32
+	
+this creates a more complex LFO shape by multiplying two different sine oscillators with each other.
+
+#### TRI - triangle oscillator
+
+`tri[<steps>]` - creates a triangle wave in the range -1 to 1 which repeats every given steps. For example: `tri[16]` will repeat every 16 steps.
+	
+`tri[<steps>,<phase>]` - lets you specify a phase offset (0.0 - 1.0)
+	
+	
+	
+#### PUL - pulse oscillator
+
+`pul[<steps>]` - creates a pulse wave in the range -1 to 1 which repeats every given steps. For example: `pul[16]` will repeat every 16 steps.
+	
+`pul[<steps>,<phase>]` - lets you specify a phase offset (0.0 - 1.0)
+	
+`pul[<steps>,<phase>,<pulsewidth>]` - lets you specify a pulsewidth (0.0 - 1.0)
+	
+	
+	
+	
+	
 
 
 
