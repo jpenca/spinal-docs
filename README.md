@@ -269,8 +269,8 @@ For example:
 ###List of Functions
 
 `randi[]` - random integer 0-1
-
-`randi[<max>]` - random integer 0-max, e.g: `randi[3]` will spill number between 0-3.
+`randi[<max>]` - random integer 0-max, e.g: `randi[3]` will spill number between 0 to 3.
+`randi[<min>,<max>]` - random integer min-max, e.g: `randi[-3,3]` will spill number between -3 to 3.
 
 
 
