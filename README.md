@@ -128,27 +128,29 @@ This means that the tracks will be alternating between the BD and SD track when 
 
 `<step(s)>` determines in which step(s) note events should be placed. valid values are floating point numbers from 1 to 64.
 the `<steps>` argument of course takes another range-loop, so if you put in `1^16`, steps 1-16 will be triggered.
+	
 
+The `<tracks>` and `<steps>` work together in parallel and - with a bit of practise - let you create very complex patterns with a great deal of expression and control.
 
-the optional P-LOCKS argument(s) will let you create sequencer automation. The syntax for this is:
+to go even further, the optional P-LOCKS argument(s) will let you create sequencer automation. The syntax for this is:
 
 `parameter-name:parameter-value`, for example: `fil.frq:20'60'90` - this will set p-locks for the filter cutoff frequency and alternate between the provided values 20, 60 and 90.
 
-You can chain as many p-locks in one command as you like.
+You can chain as many p-locks in one command as you like. You can use complex range-loops for the values.
 
-for example:
+a simple example:
 
 `trig bd'sd 1^16
 fil.frq:40'80
 smp.smp:20^28
-smp.tun:0'2'5'1`
+smp.tun:0'2'(5'7)'1`
 
 you can also split the command over multiple lines in the editor for a better overview:
 
     trig bd'sd 1^16
     fil.frq:40'80
     smp.smp:20^28
-    smp.tun:0'2'5'1`
+    smp.tun:0'2'(5'7)'1`
 
 see below for a list of parameter names.
 
