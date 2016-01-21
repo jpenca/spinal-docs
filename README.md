@@ -127,13 +127,12 @@ There are macros `BD, SD RS, CP, CP, BT, LT, MT, HT, CH, OH, CY, CB` correspondi
 If you want to trigger notes in more than one track, use multiple tracks in a range-loop, such as `BD'SD`, which is the same as `0'1`.
 This means that the tracks will be alternating between the BD and SD track when generating notes.
 
-`<step(s)>` determines in which step(s) note events should be placed. valid values are floating point numbers from 1 to 64.
-the `<steps>` argument of course takes another range-loop, so if you put in `1^16`, steps 1-16 will be triggered.
+`<step(s)>` determines in which step(s) note events should be placed. valid values are floating point numbers from 1 to 64. Floating-point values will translate to trig microtiming. For example, `1^16'1.5` will put down note events every 1.5 steps.
 	
 
 The `<tracks>` and `<steps>` work together in parallel and - with a bit of practise - let you create very complex patterns with a great deal of expression and control.
 
-to go even further, the optional P-LOCKS argument(s) will let you create sequencer automation. The syntax for this is:
+to go even further, the optional P-LOCKS argument(s) lets you program sequencer automation. The syntax for this is:
 
 `parameter-name:parameter-value`, for example: `fil.frq:20'60'90` - this will set p-locks for the filter cutoff frequency and alternate between the provided values 20, 60 and 90.
 
