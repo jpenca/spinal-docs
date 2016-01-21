@@ -275,6 +275,7 @@ For example:
 	
 `randi[<min>,<max>]` - random integer min-max, e.g: `randi[-3,3]` will spill numbers between -3 and 3.
 	
+
 #### RANDF - Random Fractional Numbers
 
 `randf[]` - random float 0.0 to 1.0
@@ -282,6 +283,28 @@ For example:
 `randf[<max>]` - random float 0.0 to max, e.g: `randf[3.5]` will spill numbers between 0.0 and 3.5.
 	
 `randf[<min>,<max>]` - random float min-max, e.g: `randf[-3.5,3.5]` will spill numbers between -3.5 to 3.5.
+
+#### PICK - Pick a random element from a range-loop
+
+`pick[<some range-loop>]` - chooses an element from the provided loop at random. Example: `pick[1'10'100]` spills out either 1, 10, or 100.
+	
+	
+#### Oscillator functions
+
+Oscillators can be very useful for parameter lock programming. They will behave like the built in LFO in the Rytm when set to HOLD mode.
+
+#### CYC - sine oscillator
+
+`cyc[<steps>]` - creates a sinoid wave in the range -1 to 1 which repeats every given steps. For example: `cyc[16]` will repeat every 16 steps.
+	
+`cyc[<steps>,<phase>]` - lets you specify a phase offset (0.0 - 1.0)
+	
+example:
+
+    trig bd 1^16
+	fil.frq:64+cyc[16]*32
+	
+this creates a sweep on the filter cutoff frequency. the sweep loops every 16 steps, and is thus nicely synced to the sequence.
 
 
 
