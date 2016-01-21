@@ -288,6 +288,15 @@ For example:
 
 `pick[<some range-loop>]` - chooses an element from the provided loop at random. Example: `pick[1'10'100]` spills out either 1, 10, or 100.
 	
+
+#### CHANCE - probability
+
+`chance[<probability>]` - lets you specify a probability from 0.0 (not gonna happen) to 1.0 (definitely gonna happen). The output is either 0 or 1. 
+	
+This is very useful for setting any of the Rytm's TRIG FLAGS, such as whether or not to enable RETRIG for a certain step:
+
+`trig bd 1^16 rt:chance[.5]` - 50% chance for each of the trigs to have RETRIG enabled.
+	
 	
 #### Oscillator functions
 
@@ -329,13 +338,7 @@ this creates a more complex LFO shape by multiplying two different sine oscillat
 `pul[<steps>,<phase>,<pulsewidth>]` - lets you specify a pulsewidth (0.0 - 1.0)
 	
 	
-#### CHANCE - probability function
 
-`chance[<probability>]` - lets you specify a probability from 0.0 (not gonna happen) to 1.0 (definitely gonna happen). The output is either 0 or 1. 
-	
-This is very useful for setting any of the Rytm's TRIG FLAGS, such as whether or not to enable RETRIG for a certain step:
-
-`trig bd 1^16 rt:chance[.5]` - 50% chance for each of the trigs to have RETRIG enabled.
 	
 	
 	
