@@ -88,6 +88,7 @@ A range-loop will wrap around once it reaches its end. In certain cases, this is
 
 #### Arithmetic
 You can do arithmetic with range-loops. Arithmetic operators are: `=,-,*,/`
+
 `2*1^3` means `2,4,6`
 
 `1+2` means `3`
